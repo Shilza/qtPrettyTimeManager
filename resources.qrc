@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/add.svg</file>
+        <file>icons/volume.svg</file>
+        <file>icons/volume_off.svg</file>
+        <file>icons/loop.svg</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>sounds/notification.mp3</file>
+        <file>sounds/notification3.mp3</file>
+    </qresource>
+</RCC>
