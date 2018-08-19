@@ -10,6 +10,7 @@ class Timer : public QObject
 
 public:
     Timer();
+    ~Timer();
 
     void stop();
     void start();

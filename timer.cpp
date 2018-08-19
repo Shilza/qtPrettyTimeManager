@@ -36,3 +36,8 @@ void Timer::counting()
 
     emit timeUpdated(time);
 }
+
+Timer::~Timer()
+{
+    delete timer;
+}

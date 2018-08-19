@@ -11,6 +11,7 @@ class SpinsContainer : public QObject
     Q_OBJECT
 public:
     SpinsContainer(QWidget *parent);
+    ~SpinsContainer();
 
     QHBoxLayout *getSpinsLayout() const;
     bool isSpinsValid();

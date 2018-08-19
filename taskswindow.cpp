@@ -209,3 +209,27 @@ void TasksWindow::setLabelErrorInvisible()
 {
     labelError->setVisible(false);
 }
+
+TasksWindow::~TasksWindow()
+{
+    delete mainLayout;
+
+    delete lineTaskName;
+
+    delete spinRunningMinutes;
+    delete spinRunningSeconds;
+    delete spinRunningMillSec;
+
+    delete spinBreakMinutes;
+    delete spinBreakSeconds;
+    delete spinBreakMillSec;
+
+    delete labelTaskName;
+    delete labelStart;
+
+    delete buttonSubmit;
+    delete buttonCancel;
+
+    delete checkEndSpin;
+    delete labelError;
+}

@@ -79,3 +79,16 @@ void SpinsContainer::compileDisplayTimeString()
                      QString::number(spinSeconds->value()) + '.' +
                      QString::number(spinMillSec->value()/10));
 }
+
+SpinsContainer::~SpinsContainer()
+{
+    delete spinsLayout;
+
+    delete spinMinutes;
+    delete spinSeconds;
+    delete spinMillSec;
+
+    delete labelMinutes;
+    delete labelSeconds;
+    delete labelMillSec;
+}

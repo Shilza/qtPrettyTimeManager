@@ -26,6 +26,8 @@ class TasksWindow : public QWidget
     Q_OBJECT
 public:
     TasksWindow();
+    ~TasksWindow();
+
 private:
     QVBoxLayout *mainLayout;
 
