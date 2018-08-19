@@ -131,7 +131,7 @@ void MainWindow::updateState(quint32 time){
     else{
         timer->setTimerMillsCounter(0);
 
-        if(currentTask != QJsonObject() && currentTask["break_time"].toBool() && !breakIsStarted){
+        if(!currentTask.isEmpty() && currentTask["break_time"].toBool() && !breakIsStarted){
             breakIsStarted = true;
             timer->setTimerMilliseconds(currentTaskBreakTime());
             soundNotification->setMedia(QUrl("qrc:/sounds/sounds/notification.mp3"));
@@ -258,7 +258,7 @@ quint32 MainWindow::currentTaskBreakTime(){
 
 void MainWindow::setRunningTime()
 {
-    if(currentTask != QJsonObject())
+    if(!currentTask.isEmpty())
         timer->setTimerMilliseconds(currentTaskRunnngTime());
     else
         timer->setTimerMilliseconds(spinsContainer->getMinutes() +
